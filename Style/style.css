@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f1f1f1;
+}
+
+/* partie presentation */
+.presentation {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.box {
+  position: absolute;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px rgb(23, 23, 22);
+}
+
+.presentation h1 {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 0px 1px 1px #333;
+  z-index: 100;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 300px;
+  height: 400px;
+  background-color: rgb(115, 132, 181);
+}
+
+.card ::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 30px);
+  left: calc(100% - 30px);
+  width: 40px;
+  height: 40px;
+  border-right: 4px solid red;
+  border-bottom: 4px solid red;
+  transition: all 4s;
+}
+
+.card:hover ::before {
+  height: 400px;
+  width: 400px;
+}
+
+.img-presentation {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.img-presentation img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* Comptence */
