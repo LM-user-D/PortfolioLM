@@ -1,23 +1,55 @@
 .formation {
   width: 100%;
-  height: auto;
+  height: 100vh;
+  position: relative;
 }
 
-h2 {
-  color: rgb(165, 42, 42);
+.projet{
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .container-formation {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   width: 80%;
   height: auto;
-  transform: translate(-50%, -0%);
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  box-shadow: 1px 1px 10px #001d3d;
+  border-radius: 3px;
+}
+
+.container-formation::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 30px);
+  left: calc(100% - 30px);
+  width: 40px;
+  height: 40px;
+  border-right: 4px solid #001d3d;
+  border-bottom: 4px solid #001d3d;
+  transition: all 4s;
+  border-radius: 3px;
+}
+
+.container-formation::after {
+  content: "";
+  position: absolute;
+  top: calc(0% - 10px);
+  left: calc(0% - 10px);
+  width: 40px;
+  height: 40px;
+  border-top: 4px solid #001d3d;
+  border-left: 4px solid #001d3d;
+  transition: all 4s;
+  border-radius: 3px;
 }
 
 .boxe-formation {
