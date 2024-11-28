@@ -39,17 +39,25 @@ content.innerHTML = mp.join("");
 const dia = document.querySelectorAll(".dia");
 
 dia.forEach((el, id) => {
-  console.log(el);
   el.style.top = Math.random() * 50 + "%";
   el.style.left = Math.random() * 70 + "%";
   el.style.animationDelay = Math.random() * 3 + "s";
 
-  if(el.style.top < 50 + "%"){
+  if (el.style.top < 50 + "%") {
     el.style.top = Math.random() * 50 + "%";
   }
-  if(el.style.left < 80 + "%"){
-  el.style.left = Math.random() * 70 + "%";
+  if (el.style.left < 80 + "%") {
+    el.style.left = Math.random() * 70 + "%";
   }
 });
 
-console.log(dia);
+const boxSpan = document.querySelector(".content-span");
+const span = document.querySelectorAll(".content-span span")
+
+console.log(span);
+
+boxSpan.addEventListener('click', ()=>{
+  span.forEach((el, id)=>{
+    el.classList.toggle('active')
+  })
+})
