@@ -18,6 +18,8 @@ function presentation() {
 }
 presentation();
 
+function competence(){
+
 const tab = [
   { titre: "HTML", nb: "97%" },
   { titre: "SASS", nb: "50%" },
@@ -39,25 +41,55 @@ content.innerHTML = mp.join("");
 const dia = document.querySelectorAll(".dia");
 
 dia.forEach((el, id) => {
-  el.style.top = Math.random() * 50 + "%";
+  el.style.top = Math.random() * 60 + "%";
   el.style.left = Math.random() * 70 + "%";
-  el.style.animationDelay = Math.random() * 3 + "s";
+  el.style.animationDelay = Math.random() * 5 + "s";
 
-  if (el.style.top < 50 + "%") {
-    el.style.top = Math.random() * 50 + "%";
+  if (el.style.top > 70 + "%") {
+     el.style.top = Math.random() * 20 + "%";
   }
-  if (el.style.left < 80 + "%") {
-    el.style.left = Math.random() * 70 + "%";
+  if (el.style.left > 80 + "%") {
+    el.style.left = Math.random() * 50 + "%";
   }
+
+
+
+
+
+
 });
+
+
+
+
+
+
+}
+competence()
+
+
+
 
 const boxSpan = document.querySelector(".content-span");
 const span = document.querySelectorAll(".content-span span")
-
-console.log(span);
+const navBarre = document.querySelector(".premierbarre")
+const lien = document.querySelectorAll(".premierli")
 
 boxSpan.addEventListener('click', ()=>{
   span.forEach((el, id)=>{
     el.classList.toggle('active')
   })
+  navBarre.classList.toggle('mouve')
+})
+
+
+lien.forEach((el,id)=>{
+  el.addEventListener('click', ()=>{
+
+    span.forEach((el, id)=>{
+      el.classList.toggle('active')
+    })
+    navBarre.classList.remove('mouve')
+  })
+
 })

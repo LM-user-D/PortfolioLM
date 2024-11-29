@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
   background-color: #f1f1f1;
 }
-section{
+section {
   overflow: hidden;
 }
 
@@ -105,7 +105,6 @@ section{
   transform: scale(1) rotate(-180deg);
 }
 
-
 /* barre nav version reponsive */
 
 .lien-res {
@@ -119,7 +118,7 @@ section{
 }
 
 .content-span {
-  position: relative ;
+  position: relative;
   left: 90%;
   width: 50px;
   height: 50px;
@@ -136,27 +135,22 @@ section{
   z-index: 199;
 }
 
-
-.content-span span:nth-child(1){
+.content-span span:nth-child(1) {
   top: 0;
 }
 
-.content-span span:nth-child(2){
+.content-span span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
 
-.content-span span:nth-child(3){
+.content-span span:nth-child(3) {
   bottom: 0;
 }
 
-
-
-
-
 .content-span span.active:nth-child(1) {
   top: 50%;
-  transform:  rotate(50deg);
+  transform: rotate(50deg);
 }
 
 .content-span span.active:nth-child(2) {
@@ -167,7 +161,6 @@ section{
 .content-span span.active:nth-child(3) {
   top: 50%;
   transform: rotate(-50deg);
-
 }
 
 /* Presentation */
@@ -247,9 +240,7 @@ section{
   text-align: center;
 }
 
-
 /* Partie resposive */
-
 
 @media screen and (max-width: 900px) {
   .premierbarre {
@@ -263,14 +254,27 @@ section{
 }
 @media screen and (max-width: 750px) {
   .premierbarre {
-    display: none;
+    transition: all 0.5s;
+    transform: translate(100%);
+    width: 50%;
+    height: 100%;
   }
+  .premierbarre.mouve {
+    transition: all 0.5s;
+    transform: translate(0%);
+    width: 50%;
+    height: 100%;
+  }
+
+  .premierul {
+    flex-direction: column;
+  }
+
   .lien-res {
-      display: block;
+    display: block;
   }
 }
 @media screen and (max-width: 550px) {
-
   .card {
     width: 86%;
     height: 400px;
@@ -283,13 +287,13 @@ section{
     transform: translate(-100px);
     font-size: 40px;
   }
-   .titre {
+  .titre {
     transform: translate(-50px);
     font-size: 30px;
   }
 
   .content-span {
-    position: relative ;
+    position: relative;
     left: 87%;
     width: 50px;
     height: 50px;
@@ -302,4 +306,3 @@ section{
     font-size: 45px;
   }
 }
-

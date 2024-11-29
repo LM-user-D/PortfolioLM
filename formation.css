@@ -6,7 +6,6 @@
 
 .projet {
   position: relative;
-  top: 0;
 }
 
 .container-formation {
@@ -67,6 +66,7 @@
   background-color: rebeccapurple;
 }
 @media screen and (max-width: 650px) {
+
   .formation {
     height: auto;
     padding: 50px;
@@ -75,6 +75,10 @@
     top: 0;
     left: 50%;
     transform: translate(-50%);
+  }
+
+  .projet{
+    top: 0;
   }
 }
 @media screen and (max-width: 450px) {
