@@ -77,6 +77,9 @@ section {
   border: 2px solid #001d3d;
 }
 
+.premierli:hover a{
+  color: #edf2f4;
+}
 .premierli:hover {
   box-shadow: 0px 5px 10px #001d3d49;
   transform: translateY(-5px);
@@ -105,8 +108,24 @@ section {
   transform: scale(1) rotate(-180deg);
 }
 
-/* barre nav version reponsive */
 
+
+
+/* barre nav version reponsive */
+.lm{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lm p{
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 30px;
+  color: #edf2f4;
+}
 .lien-res {
   position: fixed;
   top: 0;
@@ -174,7 +193,7 @@ section {
 .box {
   position: absolute;
   border-radius: 2px;
-  box-shadow: 1px 1px 5px rgb(23, 23, 22);
+  box-shadow: 0px 1px 5px #001d3d;
 }
 
 .presentation h1 {
@@ -193,7 +212,8 @@ section {
   translate: -50% -50%;
   width: 50%;
   height: 400px;
-  box-shadow: 1px 1px 10px #001d3d;
+  background-color: #ffffffcc;
+  box-shadow: 0px 1px 3px #001d3d;
   border-radius: 3px;
 }
 
@@ -235,6 +255,7 @@ section {
 }
 
 .card p {
+  line-height: 30px;
   font-family: "Poppins";
   font-family: 50px;
   text-align: center;

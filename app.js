@@ -11,10 +11,10 @@ function presentation() {
     box.forEach((el) => {
       el.style.left = Math.random() * 100 + "vw";
       el.style.top = Math.random() * 100 + "vh";
-      el.style.width = Math.random() * 100 + "px";
-      el.style.height = Math.random() * 100 + "px";
+      el.style.width = Math.random() * 200 + "px";
+      el.style.height = Math.random() * 200 + "px";
     });
-  }, 9000);
+  }, 2000);
 }
 presentation();
 
@@ -60,14 +60,8 @@ dia.forEach((el, id) => {
 });
 
 
-
-
-
-
 }
 competence()
-
-
 
 
 const boxSpan = document.querySelector(".content-span");
