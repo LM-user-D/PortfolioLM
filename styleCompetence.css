@@ -55,6 +55,13 @@
   animation: circle 15s ease-in-out infinite;
   color: #222;
   box-shadow: 0px 5px 10px #001d3d;
+  transition: all 1.5s cubic-bezier(0,1.43,1,-0.67);
+}
+
+.dia:hover{
+  z-index: 400;
+  width: 200px;
+  height: 200px;
 }
 
 .dia span {
