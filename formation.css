@@ -65,11 +65,12 @@
   height: 100%;
   background-color: rebeccapurple;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1310px) {
 
   .formation {
     height: auto;
     padding: 50px;
+    flex-direction: column;
   }
   .container-formation {
     top: 0;

@@ -63,7 +63,6 @@ dia.forEach((el, id) => {
 }
 competence()
 
-
 const boxSpan = document.querySelector(".content-span");
 const span = document.querySelectorAll(".content-span span")
 const navBarre = document.querySelector(".premierbarre")
@@ -76,12 +75,11 @@ boxSpan.addEventListener('click', ()=>{
   navBarre.classList.toggle('mouve')
 })
 
-
 lien.forEach((el,id)=>{
   el.addEventListener('click', ()=>{
 
     span.forEach((el, id)=>{
-      el.classList.toggle('active')
+      el.classList.remove('active')
     })
     navBarre.classList.remove('mouve')
   })
