@@ -190,11 +190,12 @@ section {
   overflow: hidden;
 }
 
-.box {
+.box{
   position: absolute;
   border-radius: 2px;
   box-shadow: 0px 1px 5px #001d3d;
 }
+
 
 .presentation h1 {
   position: relative;
@@ -217,30 +218,44 @@ section {
   border-radius: 3px;
 }
 
-.card::before {
+.cadre::before {
   content: "";
   position: absolute;
-  top: calc(100% - 30px);
-  left: calc(100% - 30px);
-  width: 40px;
-  height: 40px;
-  border-right: 4px solid #001d3d;
-  border-bottom: 4px solid #001d3d;
-  transition: all 4s;
+  top: calc(0% - 15px);
+  left: calc(0% - 15px);
+  width: 10%;
+  height: 10%;
+  border-top: 5px solid #ffc300;
+  border-left: 5px solid #ffc300;
+  box-shadow: inset 5px 5px 1px #ffc300;
   border-radius: 3px;
+  transition: all 0.5s;
 }
 
-.card::after {
+.cadre::after {
   content: "";
   position: absolute;
-  top: calc(0% - 10px);
-  left: calc(0% - 10px);
-  width: 40px;
-  height: 40px;
-  border-top: 4px solid #001d3d;
-  border-left: 4px solid #001d3d;
-  transition: all 4s;
+  bottom: calc(0% - 15px);
+  right: calc(0% - 15px);
+  width: 10%;
+  height: 10%;
+  border-bottom: 4px solid #ffc300;
+  border-right: 4px solid #ffc300;
   border-radius: 3px;
+  box-shadow: inset -5px -5px 1px #ffc300;
+
+  z-index: -100;
+  transition: all 0.5s;
+}
+
+.cadre:hover::before{
+  width: 100%;
+  height: 100%;
+}
+
+.cadre:hover::after{
+  width: 100%;
+  height: 100%;
 }
 
 .card span {
@@ -260,7 +275,6 @@ section {
   font-family: 50px;
   text-align: center;
 }
-
 /* Partie resposive */
 
 @media screen and (max-width: 900px) {

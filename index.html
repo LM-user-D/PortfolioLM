@@ -9,12 +9,11 @@
       rel="stylesheet" />
       <link rel="shortcut icon" href="/img/icon.webp" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="styleCompetence.css" />
+    <link rel="stylesheet" href="competence.css" />
     <link rel="stylesheet" href="formation.css" />
     <link rel="stylesheet" href="projetc.css" />
     <title>Portfolio LM</title>
   </head>
- 
  
   <body>
     <header>
@@ -47,13 +46,13 @@
 
         <div class="fond"></div>
 
-        <div class="card">
+        <div class="card cadre">
           <span>LARBI</span>
           <span>Mohamed</span>
           <p>
             Je suis un jeune développeur web. Les langages que je maîtrise sont
             HTML, CSS, Sass, JavaScript, Node.js. Je suis toujours dans la
-            recherche du domaine du développement. À travers mon portfolio,je
+            recherche du domaine du développement. À travers mon portfolio, je
             vous invite à voir mes formations et mes projets.
           </p>
         </div>
@@ -61,7 +60,7 @@
 
       <section class="competences" id="Competences">
         <h2 class="titre">Mes Compétences</h2>
-        <div class="container">
+        <div class="container cadre">
           <div class="content"></div>
         </div>
 
@@ -70,16 +69,18 @@
       <section class="formation" id="Formations">
         <h3 class="titre projet">Mes Formations</h3>
 
-        <div class="container-formation">
+        <div class="container-formation cadre">
           <div class="boxe-formation">
             <a href="https://openclassrooms.com/fr">
               <img
                 class="img-creation"
                 src="img/formation-img/img-1.png"
-                alt=""
+                alt="Image du logo openclassrooms"
               />
+              <p>Ma formation developpeur web Openclassrooms</p>
+
             </a>
-          </div>
+                </div>
 
           <div class="boxe-formation">
             <a
@@ -88,8 +89,9 @@
               <img
                 class="img-creation"
                 src="img/formation-img/img-3.jpg"
-                alt="image de lien vers formation"
+                alt="Image de la formation HTML CSS JS"
               />
+              <p>Ma formation developpeur web Udemy</p>
             </a>
           </div>
 
@@ -100,19 +102,21 @@
               <img
                 class="img-creation"
                 src="img/formation-img/img-4.jpg"
-                alt="image du logo NodeJS"
+                alt="Image de la formation CSS"
               />
+              <p>Ma formation CSS JS Udemy</p>
             </a>
           </div>
           <div class="boxe-formation">
             <a
-              href="https://www.udemy.com/course-dashboard-redirect/?course_id=2955324"
+              href="https://www.udemy.com/course/css-animation-transitions-and-transforms-creativity-course/"
             >
               <img
                 class="img-creation"
                 src="img/formation-img/img-2.jpg"
-                alt="image du logo NodeJS"
+                alt="Image de la formation CSS"
               />
+              <p>Ma formation NodeJS Udemy</p>
             </a>
           </div>
         </div>
@@ -121,13 +125,13 @@
       <section class="creation" id="Projets">
         <h4 class="titre">Mes Projets</h4>
 
-        <div class="liens">
+        <div class="liens cadre">
           <div class="boxe boxe-1">
             <a href="https://github.com/LM-user-D/Projet-3">
               <img
                 class="img-creation"
                 src="img/projet-Img/img-1.webp"
-                alt="image du logo Java Script"
+                alt="Image du logo Java Script"
               />
               <p>Lien GitHub d'un projet JS</p>
             </a>
@@ -138,7 +142,7 @@
               <img
                 class="img-creation"
                 src="img/projet-Img/img-3.webp"
-                alt="image du logo react"
+                alt="Image du logo react"
               />
               <p>Lien GitHub d'un projet React</p>
             </a>
@@ -149,7 +153,7 @@
               <img
                 class="img-creation"
                 src="img/projet-Img/img-2.webp"
-                alt="image du logo NodeJS"
+                alt="Image du logo NodeJS"
               />
               <p>Lien GitHub d'un projet NodeJS</p>
             </a>
@@ -157,29 +161,27 @@
         </div>
       </section>
 
-      <footer class="footer" id="Contact">
+      <footer itemscope itemtype="http://schema.org/ContactPoint" class="footer" id="Contact">
         <div class="contact">
 
           <div class="contact-img">
-            <img src="img/icons8-message.png" alt="">
+            <img src="img/icons8-message.png" alt="Logo enveloppe">
           </div>
 
           <a href="mailto:larbimohamed5@outlook.com"
-            >E-mail: larbimohamed5@outlook.com</a>
+            itemprop="email">E-mail: larbimohamed5@outlook.com</a>
         </div>
-
-
 
         <div class="contact">
           <div class="contact-img">
-            <img src="img/icons8-téléphone-50.png" alt="">
+            <img src="img/icons8-téléphone-50.png" alt="Logo téléphone">
           </div>
 
-          <a href="tel:+33669610634">Téléphone : 06 69 61 06 34</a>
+          <a href="tel:+33669610634" itemprop="telephone">Téléphone : 06 69 61 06 34</a>
         </div>
         <div class="contact">
           <div class="contact-img">
-            <img src="img/icons8-github-50.png" alt="">
+            <img src="img/icons8-github-50.png" alt="Logo Github">
           </div>
           <a href="https://github.com/LM-user-D">Lien GitHub</a>
         </div>
