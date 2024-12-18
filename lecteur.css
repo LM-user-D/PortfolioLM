@@ -1,0 +1,140 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: #14213d;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.container {
+  width: 95%;
+  height: 90%;
+}
+
+textarea {
+  display: block;
+  height: 500px;
+  width: 90%;
+  max-width: 90%;
+  color: #333;
+  outline: none;
+  border: none;
+  padding: 50px;
+  font-size: 20px;
+  margin: 25px auto;
+  border-radius: 50px;
+  box-shadow: 0px 2px 2px #14213d;
+  transition: all 0.4s;
+  scrollbar-width: none;
+}
+
+textarea:focus {
+  box-shadow: 0px 5px 5px 3px #14213d;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.controls-wapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls-wapper > * {
+  margin-right: 15px;
+}
+
+label {
+  font-size: 25px;
+  margin-right: 8px;
+  color: #14213d;
+  text-decoration: underline;
+}
+
+input {
+  padding: 7px 7px;
+  width: 80px;
+  outline: 0;
+  border: 2px solid #14213d;
+  border-radius: 10px;
+  color: #14213d;
+  font-size: 25px;
+}
+
+button {
+  background: none;
+  border: 2px solid #14213d;
+  outline: none;
+  font-weight: 600;
+  border-radius: 10px;
+  color: #14213d;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.4s;
+}
+
+button:hover {
+  transform: translateY(-5px);
+}
+button:active {
+  transform: translateY(0px);
+}
+
+@media screen and (max-width: 570px) {
+  h1 {
+    font-size: 50px;
+  }
+  textarea {
+    display: block;
+    height: 450px;
+    width: 90%;
+  }
+
+  .controls-wapper > * {
+    margin-right: 10px;
+  }
+
+  label {
+    font-size: 20px;
+    margin-right: 0px;
+  }
+
+  input {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .controls-wapper {
+    flex-wrap: wrap;
+    height: 150px;
+  }
+  textarea {
+    height: 410px;
+  }
+
+  button {
+    padding: 10px 15px;
+  }
+}
